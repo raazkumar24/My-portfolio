@@ -25,7 +25,7 @@ To run the portfolio locally, follow these steps:
 3. Open the `index.html` file in your browser to view the website.
 
 ## Live Preview
-You can view the live version of the portfolio [here](https://github.com/raazkumar24/My-portfolio/tree/main).
+You can view the live version of the portfolio [here](https://raazkumar24.github.io/My-portfolio/).
 
 ## Technologies Used
 - **HTML5** for structuring the content.
