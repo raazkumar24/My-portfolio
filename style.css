@@ -55,7 +55,7 @@
   --section-padding: 3.5rem 1.5rem;
 
   /* Border Radius */
-  --border-radius: 10px;
+  --border-radius: 6px;
   --border: 10px solid #e0e0e0;
   --border2: 1px solid rgba(255, 255, 255, 0.3);
 
@@ -91,6 +91,10 @@ body {
 
 main {
   overflow: hidden;
+}
+
+p {
+  font-family: var(--font-family-secondary);
 }
 
 header {
@@ -545,6 +549,19 @@ h3 {
   }
 }
 
+.fade {
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    var(--background-color),
+    transparent 30%,
+    transparent 70%,
+    var(--background-color)
+  );
+  position: absolute;
+  inset: 0;
+}
+
 /*--------------------------SERVICES--------------------------*/
 .services-section {
   text-align: center;
@@ -664,11 +681,11 @@ h3 {
 }
 
 .project-box p {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-small);
   color: var(--text-color);
   line-height: var(--line-height-base);
   margin-bottom: var(--spacing-medium);
-  height: 10vh;
+  height: 8vh;
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -681,8 +698,14 @@ h3 {
   box-shadow: var(--shadow);
   text-shadow: none;
   border-radius: var(--border-radius);
-  padding: var(--spacing-unit);
+  border: 1px solid var(--text-color);
+  padding: var(--spacing-unit-small) var(--spacing-unit);
+  margin: 0 0.2rem;
   transition: all 0.3s ease-in-out;
+}
+
+.project-box .btn i {
+  margin-right: var(--spacing-unit);
 }
 
 .project-box .btn:hover {
@@ -789,7 +812,7 @@ h3 {
   width: 100%;
   padding: var(--spacing-unit);
   background-color: transparent;
-  border: 1px solid #ddd;
+  border: 1px solid var(--text-color);
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
   font-size: var(--font-size-base);
@@ -804,10 +827,10 @@ h3 {
 
 .contact-form button {
   color: var(--text-color);
-  border: none;
+  border: 1px solid var(--text-color);
   padding: var(--spacing-unit);
   box-shadow: var(--shadow);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   background-color: var(--background-color);
@@ -815,7 +838,7 @@ h3 {
 
 .contact-form button:hover {
   color: var(--primary-color);
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--shadow-insert);
   text-shadow: var(--shadow-insert);
   transform: scale(1.05);
 }
