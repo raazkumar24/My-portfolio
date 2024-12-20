@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/url-icon.png" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 
@@ -178,17 +179,13 @@
             </p>
           </div>
         </div>
-        <div class="skills-section">
+        <div class="skills-section" data-aos="fade-up" data-aos-duration="2000">
           <h3>My Skillset</h3>
           <p class="description">
             The Big Oxmox advised her not to do so, because there were thousands
             of bad Commas.
           </p>
-          <div
-            class="skills-wrapper"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
+          <div class="skills-wrapper">
             <div class="skill">
               <div class="circle" data-progress="98"></div>
               <p>WordPress</p>
@@ -753,13 +750,13 @@
       })(); //for gmail
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
       AOS.init({
         offset: 120, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
         duration: 1000, // values from 0 to 3000, with step 50ms
-        easing: "ease", // default easing for AOS animations
+        easing: "ease in out", // default easing for AOS animations
         once: false, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
       }); //animations
