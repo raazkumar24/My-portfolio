@@ -139,8 +139,8 @@ fetch('./api/projects.json')
         <div class="project-info">
           <h3>${project.title}</h3>
           <p>${project.description}</p>
-          <a href="${project.liveLink}" class="btn btn-primary">Live Preview</a>
-          <a href="${project.githubLink}" class="btn btn-primary"><i class="fa-brands fa-github"></i> Github</a>
+          <a href="${project.liveLink}" target="_blank" class="btn btn-primary">Live Preview</a>
+          <a href="${project.githubLink}" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> Github</a>
         </div>
       `;
 

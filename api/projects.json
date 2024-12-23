@@ -1,5 +1,12 @@
 [
   {
+    "title": "Ract Portfolio",
+    "description": "A professional, responsive landing page designed to attract clients, showcase services, and generate leads effectively.",
+    "liveLink": "https://raazkumar24.github.io/React-Portfolio/",
+    "githubLink": "https://github.com/raazkumar24/React-Portfolio",
+    "image": "./images/react-portfolio.png"
+  },
+  {
     "title": "Business Landing Page",
     "description": "A professional, responsive landing page designed to attract clients, showcase services, and generate leads effectively.",
     "liveLink": "https://raazkumar24.github.io/landing-page/",

@@ -670,7 +670,7 @@ h3 {
   margin-bottom: var(--spacing-base);
   transition: box-shadow 0.3s, transform 0.3s;
   aspect-ratio: 3/2;
-  object-fit: cover;
+  object-fit: fill;
   filter: grayscale(100%);
 }
 
