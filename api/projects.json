@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Business Landing Page",
+    "description": "A professional, responsive landing page designed to attract clients, showcase services, and generate leads effectively.",
+    "liveLink": "https://raazkumar24.github.io/landing-page/",
+    "githubLink": "https://github.com/raazkumar24/landing-page",
+    "image": "./images/landing page.png"
+  },
+  {
+    "title": "Amazing Portfolio",
+    "description": "A visually impressive portfolio website showcasing skills, projects, and achievements with a focus on design and usability.",
+    "liveLink": "https://raazkumar24.github.io/portfolio-site2/",
+    "githubLink": "https://github.com/raazkumar24/portfolio-site2",
+    "image": "./images/portfolio-site.png"
+  },
+  {
+    "title": "Calculator",
+    "description": "A calculator is a device or application designed to perform mathematical operations, ranging from basic arithmetic to complex calculations.",
+    "liveLink": "https://raazkumar24.github.io/calculator-app/",
+    "githubLink": "https://github.com/raazkumar24/calculator-app",
+    "image": "https://i.postimg.cc/Dw3Zcw4n/Screenshot-2024-11-23-114926.png"
+  },
+  {
+    "title": "Snake Game",
+    "description": "The Snake Game is a classic arcade game where players control a growing snake to eat targets while avoiding collisions with walls or itself.",
+    "liveLink": "https://raazkumar24.github.io/Snake-game/",
+    "githubLink": "https://github.com/raazkumar24/Snake-game",
+    "image": "https://i.postimg.cc/tgSnDHHk/Screenshot-2024-11-23-114556.png"
+  },
+  {
+    "title": "To-Do List App",
+    "description": "A task management app with features for creating, editing, and organizing tasks in a user-friendly interface.",
+    "liveLink": "https://raazkumar24.github.io/Todo-lists/",
+    "githubLink": "https://github.com/raazkumar24/Todo-lists",
+    "image": "./images/todo-list.png"
+  },
+  {
+    "title": "Login & Sign-Up Form",
+    "description": "Engaging login, sign-up forms with smooth animations for seamless user authentication experience.",
+    "liveLink": "https://raazkumar24.github.io/login-form/",
+    "githubLink": "https://github.com/raazkumar24/login-form",
+    "image": "./images/login & sing in form.png"
+  }
+]

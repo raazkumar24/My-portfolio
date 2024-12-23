@@ -120,3 +120,31 @@ scrollToTopBtn.addEventListener("click", function () {
     behavior: "smooth"
   });
 });
+
+
+
+
+//projects
+fetch('./api/projects.json')
+  .then((response) => response.json())
+  .then((projects) => {
+    const projectsWrapper = document.getElementById('projects-wrapper');
+
+    projects.forEach((project) => {
+      const projectBox = document.createElement('div');
+      projectBox.classList.add('project-box');
+
+      projectBox.innerHTML = `
+        <img src="${project.image}" alt="${project.title}" class="project-image" />
+        <div class="project-info">
+          <h3>${project.title}</h3>
+          <p>${project.description}</p>
+          <a href="${project.liveLink}" class="btn btn-primary">Live Preview</a>
+          <a href="${project.githubLink}" class="btn btn-primary"><i class="fa-brands fa-github"></i> Github</a>
+        </div>
+      `;
+
+      projectsWrapper.appendChild(projectBox);
+    });
+  })
+  .catch((error) => console.error('Error fetching projects:', error));
