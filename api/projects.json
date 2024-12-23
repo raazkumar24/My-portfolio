@@ -1,21 +1,21 @@
 [
   {
     "title": "Ract Portfolio",
-    "description": "A professional, responsive landing page designed to attract clients, showcase services, and generate leads effectively.",
+    "description": "A full React portfolio made using React and Tailwind CSS.",
     "liveLink": "https://raazkumar24.github.io/React-Portfolio/",
     "githubLink": "https://github.com/raazkumar24/React-Portfolio",
     "image": "./images/react-portfolio.png"
   },
   {
     "title": "Business Landing Page",
-    "description": "A professional, responsive landing page designed to attract clients, showcase services, and generate leads effectively.",
+    "description": "A professional, responsive landing page made using HTML, CSS, and JavaScript.",
     "liveLink": "https://raazkumar24.github.io/landing-page/",
     "githubLink": "https://github.com/raazkumar24/landing-page",
     "image": "./images/landing page.png"
   },
   {
     "title": "Amazing Portfolio",
-    "description": "A visually impressive portfolio website showcasing skills, projects, and achievements with a focus on design and usability.",
+    "description": "A visually impressive portfolio website showcasing skills, projects made using HTML, CSS, and JavaScript.",
     "liveLink": "https://raazkumar24.github.io/portfolio-site2/",
     "githubLink": "https://github.com/raazkumar24/portfolio-site2",
     "image": "./images/portfolio-site.png"
