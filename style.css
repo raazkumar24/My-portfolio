@@ -301,8 +301,8 @@ section {
   color: #4267b2;
 }
 
-.home-section .social-icons .fa-twitter:hover {
-  color: #1da1f2;
+.home-section .social-icons .fa-x-twitter:hover {
+  color: #000;
 }
 
 .home-section .social-icons .fa-instagram:hover {
@@ -314,7 +314,7 @@ section {
 }
 
 .home-section .social-icons .fa-github:hover {
-  color: #333;
+  color: #000;
 }
 
 .home-section .left a:hover,
