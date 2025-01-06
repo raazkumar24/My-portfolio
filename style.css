@@ -10,7 +10,7 @@
   --secondary-color: #00d5ff;
   --heading-color: #000;
   --text-color: #555;
-  --background-color: #dde1e7;
+  --background-color: #e4e7eb;
   --blur-bg: rgba(255, 255, 255, 0.2);
   --circle-color: #b0b0b0;
   --circle-inside-color: #ddd;
@@ -87,6 +87,8 @@ body {
   font-family: var(--font-family-primary);
   text-shadow: var(--shadow);
   background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 main {
@@ -106,6 +108,7 @@ header {
   box-shadow: var(--box-shadow);
   width: 100%;
   position: fixed;
+  left: 0;
   top: 0;
   z-index: var(--z-header);
   background-color: var(--background-color);
