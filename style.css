@@ -577,6 +577,20 @@ h3 {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
 }
 
 .skills-list-1 {
@@ -618,7 +632,7 @@ h3 {
   }
 }
 
-.fade {
+/* .fade {
   pointer-events: none;
   background: linear-gradient(
     90deg,
@@ -629,7 +643,7 @@ h3 {
   );
   position: absolute;
   inset: 0;
-}
+} */
 
 /*--------------------------SERVICES--------------------------*/
 .services-section {
