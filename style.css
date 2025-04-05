@@ -475,17 +475,16 @@ h3 {
   margin-top: 20px;
 }
 
-.qualifications-container .card {
+/* .qualifications-container .card {
   background-color: var(--box-color);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   padding: var(--spacing-medium);
   width: calc(30% - 20px);
-  /* max-width: 90%; */
   box-sizing: border-box;
   line-height: var(--line-height-base);
   transition: box-shadow 0.3s, transform 0.3s;
-  transform: translateY(0); /* Initial position */
+  transform: translateY(0);
 }
 
 .qualifications-container .card:hover {
@@ -494,6 +493,73 @@ h3 {
 }
 
 .qualifications-container .card p strong {
+  color: var(--heading-color);
+} */
+
+.qualifications-container .card {
+  perspective: 1000px;
+  width: calc(30% - 20px);
+  height: 280px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.qualifications-container .card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  background-color: var(--box-color);
+  box-shadow: var(--shadow);
+  backface-visibility: hidden;
+  padding: var(--spacing-medium);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-front h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: var(--heading-color);
+  text-shadow: var(--shadow);
+}
+
+/* .hover-text {
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  margin-top: var(--spacing-unit-small);
+  font-weight: var(--font-weight-semi-bold);
+  border: var(--border);
+  padding: var(--spacing-unit-small) var(--spacing-unit);
+  box-shadow: var(--shadow-insert);
+} */
+
+.card-front .icon {
+  font-size: 2rem;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  font-size: 0.95rem;
+  line-height: var(--line-height-base);
+}
+
+.card-back p strong {
   color: var(--heading-color);
 }
 
