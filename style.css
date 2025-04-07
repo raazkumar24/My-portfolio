@@ -577,6 +577,9 @@ h3 {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
+}
+
+.key-skills .fade {
   mask-image: linear-gradient(
     to right,
     transparent,
@@ -632,18 +635,7 @@ h3 {
   }
 }
 
-/* .fade {
-  pointer-events: none;
-  background: linear-gradient(
-    90deg,
-    var(--background-color),
-    transparent 30%,
-    transparent 70%,
-    var(--background-color)
-  );
-  position: absolute;
-  inset: 0;
-} */
+
 
 /*--------------------------SERVICES--------------------------*/
 .services-section {
