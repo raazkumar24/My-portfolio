@@ -1487,3 +1487,63 @@ body.dark-mode {
 #scrollToTopBtn:hover {
   background-color: #555;
 }
+
+
+
+/* Add these to your existing CSS */
+
+/* Custom Cursor */
+.cursor, .cursor-follower {
+  position: fixed;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-color);
+  transition: width 0.3s, height 0.3s;
+}
+
+.cursor-follower {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--primary-color);
+  transition: all 0.3s ease-out;
+}
+
+/* Particle Background */
+.particles-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Glassmorphism Effect */
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* 3D Card Effect */
+.card-3d {
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card-3d:hover {
+  transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+

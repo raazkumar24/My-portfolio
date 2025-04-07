@@ -148,3 +148,88 @@ fetch('./api/projects.json')
     });
   })
   .catch((error) => console.error('Error fetching projects:', error));
+
+
+
+
+  
+  // Custom Cursor
+const cursor = document.querySelector('.cursor');
+const cursorFollower = document.querySelector('.cursor-follower');
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+  
+  setTimeout(() => {
+    cursorFollower.style.left = e.clientX + 'px';
+    cursorFollower.style.top = e.clientY + 'px';
+  }, 100);
+});
+
+// Add hover effects for interactive elements
+document.querySelectorAll('a, button, .card, input, textarea').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.style.width = '20px';
+    cursor.style.height = '20px';
+    cursorFollower.style.width = '40px';
+    cursorFollower.style.height = '40px';
+  });
+  
+  el.addEventListener('mouseleave', () => {
+    cursor.style.width = '8px';
+    cursor.style.height = '8px';
+    cursorFollower.style.width = '30px';
+    cursorFollower.style.height = '30px';
+  });
+});
+
+// Initialize particles.js
+document.addEventListener('DOMContentLoaded', function() {
+  if (document.getElementById('particles-js')) {
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out" }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        }
+      }
+    });
+  }
+});
+
+// Smooth scroll for anchor links with offset
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    const headerHeight = document.querySelector('header').offsetHeight;
+    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+    
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Parallax effect for sections
+window.addEventListener('scroll', function() {
+  const scrollPosition = window.pageYOffset;
+  document.querySelectorAll('.parallax').forEach(el => {
+    const speed = parseFloat(el.getAttribute('data-speed'));
+    el.style.transform = `translateY(${scrollPosition * speed}px)`;
+  });
+});
